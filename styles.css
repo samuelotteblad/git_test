@@ -1,0 +1,100 @@
+<style>
+/* Grundläggande reset för att säkerställa konsekvent utseende över olika webbläsare */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ställer in standardtypsnitt och bakgrundsfärg för hela sidan */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+/* Stil för sidhuvudet */
+header {
+  background-color: #4caf4f00;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  text-align: left;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+/* Stil för huvudsektionen */
+main {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.0em;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.Menu {/* Stil för navigationsmenyn */
+    display: -ms-flexbox;  
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8em;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap; /* Tillåter radbrytning om nödvändigt */
+  gap: 20px; /* Utrymme mellan kolumnerna och raderna */
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.framed-link {
+  text-decoration: none; /* Ta bort understrykning */
+  color: inherit; /* Behåll textfärg */
+  display: block; /* Gör länken blocknivå */
+}
+
+.framed-text {
+  text-align: left; /* Vänsterjustera text */
+  border-radius: 5px; /* Runda hörn */
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px; /* Inre marginal */
+  background-color: #fff; /* Vit bakgrund */
+  margin-bottom: 20px; /* Yttre marginal nedanför */
+}
+
+/* Stil för sidfoten */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Media queries för responsiv design */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column; /* Ändra till kolumnlayout på mindre skärmar */
+  }
+
+  .column {
+    margin: 0 30px 10px; /* Ta bort sidomarginaler och lägg till bottenmarginal */
+  }
+}
+</style>
